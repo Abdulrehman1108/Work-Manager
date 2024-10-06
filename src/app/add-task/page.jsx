@@ -3,12 +3,7 @@ import { addTask } from "@/services/taskService";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-// import { Image } from 'next/image';
-// import loginSvg  from '../../../public/login.svg';
 
- const metadata = {
-  title: "Add Task: Work Manager",
-};
 
 const AddTask = () => {
   document.title = metadata.title;
