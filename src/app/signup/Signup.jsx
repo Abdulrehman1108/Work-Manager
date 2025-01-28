@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -138,7 +139,7 @@ const Signup = () => {
             <div className="mt-3">
               <label
                 htmlFor="user_name"
-                className="block text-sm font-medium mb-2 ps-1"
+                className="block mb-2 text-sm font-medium ps-1"
               >
                 Username
               </label>
@@ -161,7 +162,7 @@ const Signup = () => {
             <div className="mt-3">
               <label
                 htmlFor="user_email"
-                className="block text-sm font-medium mb-2 ps-1"
+                className="block mb-2 text-sm font-medium ps-1"
               >
                 Email
               </label>
@@ -185,7 +186,7 @@ const Signup = () => {
             <div className="mt-3">
               <label
                 htmlFor="user_password"
-                className="block text-sm font-medium mb-2 ps-1"
+                className="block mb-2 text-sm font-medium ps-1"
               >
                 Password
               </label>
@@ -208,7 +209,7 @@ const Signup = () => {
             <div className="mt-3">
               <label
                 htmlFor="user_about"
-                className="block text-sm font-medium mb-2 ps-1"
+                className="block mb-2 text-sm font-medium ps-1"
               >
                 About
               </label>
@@ -229,9 +230,9 @@ const Signup = () => {
             </div>
 
             {/* Role Selection */}
-            <div className="mt-3 flex justify-center">
+            <div className="flex justify-center mt-3">
               <label
-                className="block text-sm font-medium mb-2 ps-1"
+                className="block mb-2 text-sm font-medium ps-1"
                 htmlFor="role"
               >
                 Select Role
@@ -252,7 +253,7 @@ const Signup = () => {
             {data.role === 'Farmer' && (
               <div className="mt-3">
                 <label
-                  className="block text-sm font-medium mb-2 ps-1"
+                  className="block mb-2 text-sm font-medium ps-1"
                   htmlFor="farmName"
                 >
                   Farm Name
@@ -278,7 +279,7 @@ const Signup = () => {
             {data.role === 'Farmer' && (
               <div className="mt-3">
                 <label
-                  className="block text-sm font-medium mb-2 ps-1"
+                  className="block mb-2 text-sm font-medium ps-1"
                   htmlFor="farmLocation"
                 >
                   Farm Location
@@ -304,7 +305,7 @@ const Signup = () => {
             {data.role === 'Shop Owner' && (
               <div className="mt-3">
                 <label
-                  className="block text-sm font-medium mb-2 ps-1"
+                  className="block mb-2 text-sm font-medium ps-1"
                   htmlFor="shopName"
                 >
                   Shop Name
@@ -330,7 +331,7 @@ const Signup = () => {
             {data.role === 'Shop Owner' && (
               <div className="mt-3">
                 <label
-                  className="block text-sm font-medium mb-2 ps-1"
+                  className="block mb-2 text-sm font-medium ps-1"
                   htmlFor="shopLocation"
                 >
                   Shop Location
@@ -356,7 +357,7 @@ const Signup = () => {
             {data.role === 'Shop Owner' && (
               <div className="mt-3">
                 <label
-                  className="block text-sm font-medium mb-2 ps-1"
+                  className="block mb-2 text-sm font-medium ps-1"
                   htmlFor="deliveryService"
                 >
                   Delivery Service
@@ -380,7 +381,7 @@ const Signup = () => {
               </div>
             )}
 
-            <div className="mt-3 flex justify-center">
+            <div className="flex justify-center mt-3">
               <button
                 type="submit"
                 className="px-3 py-2 bg-green-600 rounded-lg hover:bg-green-400"

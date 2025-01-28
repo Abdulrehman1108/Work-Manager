@@ -1,3 +1,4 @@
+'use client';
 import { connectDb } from "@/helper/db";
 import { Task } from "@/models/task";
 import mongoose from "mongoose";
